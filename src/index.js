@@ -21,7 +21,7 @@ if (app.get('env') === 'development') {
 }
 
 app.use(log)
-app.use(helmet)
+app.use(helmet())
 const port = process.env.PORT || 3002
 app.listen(port, () => {
     console.log(`listening on port ${port}`);
